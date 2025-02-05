@@ -65,18 +65,7 @@ public class GraphicsPanel extends JPanel implements MouseListener{
     }
 
     private void placeBombs(int bombCount) {
-        Random rand = new Random();
-        int placedBombs = 0;
 
-        while (placedBombs < bombCount) {
-            int row = rand.nextInt(ROWS);
-            int col = rand.nextInt(COLS);
-
-            if (!cells[row][col].hasBomb()) {
-                cells[row][col].setBomb();
-                placedBombs++;
-            }
-        }
     }
 
     private void calculateNeighborBombCounts() {
