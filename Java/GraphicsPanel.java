@@ -30,8 +30,6 @@ public class GraphicsPanel extends JPanel implements MouseListener{
 
     @Override
     protected void paintComponent(Graphics g) {
-        super.paintComponent(g);
-
         // Draw each cell
         for (int row = 0; row < cells.length; row++) {
             for (int col = 0; col < cells[row].length; col++) {
