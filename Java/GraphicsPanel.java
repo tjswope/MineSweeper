@@ -79,7 +79,7 @@ public class GraphicsPanel extends JPanel implements MouseListener{
         }
     }
 
-    // this function should count how many bombs sorround the cell located at [row][col]
+    // this function should count how many bombs surround the cell located at [row][col]
     private int countNeighborBombs(int row, int col) {
         int count = 0;
 
